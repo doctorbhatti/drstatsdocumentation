@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>DrStats Official Documentation</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+      <script src="./js/elasticlunr.min.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = (window === window.parent);
+        
+        var pageToc = [
+          {title: "Introduction", url: "#_top", children: [
+              {title: "Users", url: "#users" },
+              {title: "Tech Facts", url: "#tech-facts" },
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script>
+      <script src="search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+<nav class="navbar wm-page-top-frame">
+  <div class="container-fluid wm-top-container">
+    
+    <div class="wm-top-tool pull-right wm-vcenter">
+      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
+        
+        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
+          ><i class="fa fa-search" aria-hidden="true"></i></button>
+
+        <div class="input-group input-group-sm wm-top-search">
+          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
+          <span class="input-group-btn" role="search">
+            
+            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
+            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
+            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    
+    <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
+      <button id="wm-toc-button" type="button" class="btn btn-sm btn-default wm-vcentered"><i class="fa fa-th-list" aria-hidden="true"></i></button>
+    </div>
+
+    
+    
+
+    
+    <a href="" class="wm-top-brand wm-top-link wm-vcenter">
+      
+      <div class="wm-top-title">
+        DrStats Official Documentation<br>
+        
+      </div>
+    </a>
+  </div>
+</nav>
+
+  <div id="main-content" class="wm-page-top-frame">
+    
+<nav class="wm-toc-pane">
+  
+  <ul class="wm-toctree">
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Home</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="Menu/" class="wm-article-link wm-toc-text">Menu</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text"> user manual</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="%20user-manual/companies/" class="wm-article-link wm-toc-text">Companies</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="%20user-manual/dashboard/" class="wm-article-link wm-toc-text">Dashboard</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="%20user-manual/items/" class="wm-article-link wm-toc-text">Items</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="%20user-manual/reports/" class="wm-article-link wm-toc-text">Reports</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="%20user-manual/toolbar/" class="wm-article-link wm-toc-text">Toolbar</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Auth</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/auth/users/" class="wm-article-link wm-toc-text">Users</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Banking</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/banking/accounts/" class="wm-article-link wm-toc-text">Accounts</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/banking/reconciliations/" class="wm-article-link wm-toc-text">Reconciliations</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/banking/transactions/" class="wm-article-link wm-toc-text">Transactions</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/banking/transfers/" class="wm-article-link wm-toc-text">Transfers</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Purchases</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/purchases/bills/" class="wm-article-link wm-toc-text">Bills</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/purchases/payments/" class="wm-article-link wm-toc-text">Payments</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/purchases/vendors/" class="wm-article-link wm-toc-text">Vendors</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Sales</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/customers/" class="wm-article-link wm-toc-text">Customers</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/invoices/" class="wm-article-link wm-toc-text">Invoices</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/revenues/" class="wm-article-link wm-toc-text">Revenues</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Settings</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/categories/" class="wm-article-link wm-toc-text">Categories</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/company/" class="wm-article-link wm-toc-text">Company</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/currencies/" class="wm-article-link wm-toc-text">Currencies</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/default/" class="wm-article-link wm-toc-text">Default</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/email/" class="wm-article-link wm-toc-text">Email</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/invoice/" class="wm-article-link wm-toc-text">Invoice</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/localsation/" class="wm-article-link wm-toc-text">Localsation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/offline-payments/" class="wm-article-link wm-toc-text">Offline payments</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/paypal-standard/" class="wm-article-link wm-toc-text">Paypal standard</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/scheduling/" class="wm-article-link wm-toc-text">Scheduling</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/settings/taxes/" class="wm-article-link wm-toc-text">Taxes</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Faq</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/accrual-vs-cash/" class="wm-article-link wm-toc-text">Accrual vs cash</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/bills-vs-payments/" class="wm-article-link wm-toc-text">Bills vs payments</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/invoices-vs-revenues/" class="wm-article-link wm-toc-text">Invoices vs revenues</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="faq/shipping-cost/" class="wm-article-link wm-toc-text">Shipping cost</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</nav>
+
+    <div class="wm-content-pane">
+      <iframe class="wm-article" name="article"></iframe>
+    </div>
+  </div>
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Menu/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Menu/" class="btn btn-xs btn-link">
+        Menu
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="introduction">Introduction</h1>
+<p>Welcome to the documentation of Doctor Stats stylized as DrStats, the <a href="https://dbtestdrive.cf/acca">most intelligent accounting software</a> by <a href="https://doctorbhatti.rocks">Muhammad Hassan Ashfaq</a>.</p>
+<p>This guide serves as a resource to users and developers needing direction in Doctor Stats interface. </p>
+<h3 id="users">Users</h3>
+<p>You may start with the <a href="/user-manual/dashboard">dashboard</a> page and the <a href="/user-manual/toolbar">toolbar</a> description. Then see how <a href="/user-manual/companies">companies</a> work and check <a href="/user-manual/auth/users">users</a> page for permissions. Confused about the difference between invoices and revenues? <a href="/faq/invoices-vs-revenues">Check</a> it out. Here you can <a href="/faq/bills-vs-payments">learn</a> what is a payment and a bill.</p>
+<h3 id="tech-facts">Tech Facts</h3>
+<p>Doctor Stats is built using <a href="https://laravel.com">Laravel</a> framework, make sure you've got how it works first.Doctor Stats ships with fine-grained permissions and it's crucial to implement them into your app. [RESTful API] is one of the most important parts of Doctor Stats.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Menu/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Menu/" class="btn btn-xs btn-link">
+        Menu
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+  <p>Documentation powered by <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://doctorbhatti.rocks">xDream Dark</a> theme by (Muhammad Hassan Ashfaq).</p>
+</footer>
+
+</body>
+</html>
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2021-03-31 07:37:05.944036+00:00
+-->
