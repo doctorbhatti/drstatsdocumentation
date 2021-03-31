@@ -52,24 +52,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <nav class="navbar wm-page-top-frame">
   <div class="container-fluid wm-top-container">
-    
-    <div class="wm-top-tool pull-right wm-vcenter">
-      <form class="dropdown wm-vcentered" id="wm-search-form" action="./search.html">
-        
-        <button id="wm-search-show" class="btn btn-sm btn-default" type="submit"
-          ><i class="fa fa-search" aria-hidden="true"></i></button>
 
-        <div class="input-group input-group-sm wm-top-search">
-          <input type="text" name="q" class="form-control" id="mkdocs-search-query" placeholder="Search" autocomplete="off">
-          <span class="input-group-btn" role="search">
-            
-            <button class="btn btn-default dropdown-toggle collapse" data-toggle="dropdown" type="button"><span class="caret"></span></button>
-            <ul id="mkdocs-search-results" class="dropdown-menu dropdown-menu-right"></ul>
-            <button id="wm-search-go" class="btn btn-default" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </span>
-        </div>
-      </form>
-    </div>
 
     
     <div class="wm-top-tool wm-vcenter pull-right wm-small-left">
@@ -156,7 +139,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <ul class="wm-toctree">
       <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/customers/" class="wm-article-link wm-toc-text">Customers</a>
 </li>
-      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/invoices/" class="wm-article-link wm-toc-text">Invoices</a>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/invoices/" class="wm-article-link wm-toc-text">Invoices/Fee Challan</a>
 </li>
       <li class="wm-toc-li wm-toc-lev3 "><a href="%20user-manual/sales/revenues/" class="wm-article-link wm-toc-text">Revenues</a>
 </li>
@@ -250,7 +233,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>You may start with the <a href="/user-manual/dashboard">dashboard</a> page and the <a href="/user-manual/toolbar">toolbar</a> description. Then see how <a href="/user-manual/companies">companies</a> work and check <a href="/user-manual/auth/users">users</a> page for permissions. Confused about the difference between invoices and revenues? <a href="/faq/invoices-vs-revenues">Check</a> it out. Here you can <a href="/faq/bills-vs-payments">learn</a> what is a payment and a bill.</p>
 <h3 id="tech-facts">Tech Facts</h3>
 <p>Doctor Stats is built using <a href="https://laravel.com">Laravel</a> framework, make sure you've got how it works first.Doctor Stats ships with fine-grained permissions and it's crucial to implement them into your app. [RESTful API] is one of the most important parts of Doctor Stats.</p>
-
+<p class="text-success"><strong>Please note that in this documentation entity "Customer/Customers" is referred to "Student/Students" and "Purchase/Purchases" to "Expenditure/Expenditures" in our use case.</strong></p>
   <br>
     
 
